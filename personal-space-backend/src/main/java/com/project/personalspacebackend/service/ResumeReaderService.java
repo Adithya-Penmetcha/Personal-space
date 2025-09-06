@@ -26,7 +26,7 @@ public class ResumeReaderService {
     }
 
     public String extractResumeInfo(String parsedText) {
-        String prompt = "Extract the following information from this resume text and return a JSON object with the structure {name:\"\", email:\"\", experience:[\"\"]}. If experience has multiple lines, return them as an array of points. Resume text:\n" + parsedText;
+        String prompt = "Extract the following information from this resume text and return a JSON object with the structure {name:\"\", email:\"\", mobile:\"\", skills:{}, experience:[\"\"]}. skills should be as key value pairs, suppose a skill has language: java,sql then give me as skills: {language: [java,sql]} as there are multiple it should be an array.If experience has multiple lines, return them as an array of points. Just give me the json and do not give any text before or after. Resume text:\n" + parsedText;
         return chatClient.prompt().user(prompt).call().content();
     }
 }
