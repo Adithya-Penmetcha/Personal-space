@@ -1,0 +1,21 @@
+<div class="not-found-container">
+  <p-card class="not-found-card">
+    <div class="icon-container">
+      <i class="pi pi-exclamation-triangle"></i>
+    </div>
+
+    <h1 class="error-code">404</h1>
+    <h2 class="error-title">Oops! Page Not Found</h2>
+    <p class="error-message">
+      The page you're looking for doesn’t exist or has been moved.
+    </p>
+
+    <button
+      pButton
+      label="Go Home"
+      icon="pi pi-home"
+      class="home-btn"
+      (click)="goHome()"
+    ></button>
+  </p-card>
+</div>

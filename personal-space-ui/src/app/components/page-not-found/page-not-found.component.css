@@ -1,0 +1,63 @@
+/* Center the card on the screen */
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+  width: 97vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card styling */
+.not-found-card {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+}
+
+/* Icon styling */
+.icon-container {
+  font-size: 3rem;
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+}
+
+/* Error code */
+.error-code {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #343a40;
+  margin: 0;
+}
+
+/* Title */
+.error-title {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  color: #495057;
+}
+
+/* Message */
+.error-message {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+/* Button */
+.home-btn {
+  background-color: #ff6b6b !important;
+  border: none !important;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.home-btn:hover {
+  background-color: #e63946 !important;
+}

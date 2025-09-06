@@ -1,0 +1,57 @@
+/* Container fills the screen */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97vw;
+  height: 97vh;
+}
+
+/* Card styling */
+p-card {
+  width: 350px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.title {
+  margin-bottom: 1.5rem;
+}
+
+/* Form groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+/* Labels in black */
+.form-group label {
+  color: black;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Inputs with only bottom border */
+input[pInputText] {
+  border: none;
+  border-bottom: 1px solid #333;
+  border-radius: 0;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+/* Login button styling */
+.login-btn {
+  background-color: red !important;
+  color: white !important;
+  border: none !important;
+  width: 100%;
+  padding: 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,223 @@
+/* Form styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label,
+.small-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  color: #000;
+}
+
+/* Red Create Task button */
+.create-btn {
+  background-color: #d32f2f !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 0.75rem;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.create-btn.small-btn {
+  font-size: 0.95rem !important;
+  padding: 0.5rem !important;
+  margin-top: 0.7rem;
+}
+
+.tasks-main-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: #fff;
+}
+
+.tasks-left {
+  width: 350px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.tasks-right {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #ff6b6b;
+  border-radius: 10px;
+  padding: 1rem 0;
+}
+
+.task-form-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.active-tasks-card {
+  min-height: 300px;
+  width: 100%;
+  box-shadow: none;
+  color: #fff;
+}
+
+.active-tasks-card h2 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+input[pInputText],
+.p-dropdown,
+.p-calendar,
+textarea {
+  border-radius: 4px !important;
+  color: #000 !important;
+  background: #fff !important;
+}
+
+input[pInputText].small-input,
+.p-dropdown.small-input,
+textarea.small-input {
+  font-size: 0.95rem !important;
+  padding: 0.35rem 0.5rem !important;
+  height: 2rem !important;
+}
+
+textarea.large-textarea {
+  min-height: 60px;
+  max-height: 120px;
+  resize: vertical;
+}
+
+.no-tasks {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.tasks-list {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tasks-list-grid {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tasks-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.tasks-flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.task-card {
+  flex: 0 1 48%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  min-width: 0;
+  margin-bottom: 1rem;
+}
+
+.task-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-name {
+  font-weight: bold;
+  font-size: 1rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* color set dynamically */
+}
+
+.task-due-date {
+  font-size: 0.95rem;
+  color: #333;
+  margin-left: 0.5rem;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #000;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.task-desc-expanded {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #000;
+  background: #fff;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 2px 6px rgba(211, 47, 47, 0.07);
+  position: relative;
+}
+
+.task-desc-item{
+  margin: 0.25rem;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.action-btn {
+  font-size: 0.9rem !important;
+  padding: 0.3rem 1rem !important;
+  border-radius: 4px !important;
+}
+
+.complete-btn {
+  background-color: #43a047 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.delete-btn {
+  background-color: #e53935 !important;
+  color: #fff !important;
+  border: none !important;
+}

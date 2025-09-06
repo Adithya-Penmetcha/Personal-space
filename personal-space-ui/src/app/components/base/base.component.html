@@ -1,0 +1,26 @@
+<div class="home-container">
+  <!-- Header -->
+  <header class="header">
+    <p-tabMenu
+      [model]="items"
+      [(activeItem)]="activeItem"
+      class="custom-tabmenu"
+    ></p-tabMenu>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://wa.me/" target="_blank"><i class="pi pi-whatsapp"></i><span>WhatsApp</span></a>
+      <a href="https://facebook.com" target="_blank"><i class="pi pi-facebook"></i><span>Facebook</span></a>
+      <a href="https://twitter.com" target="_blank"><i class="pi pi-twitter"></i><span>Twitter</span></a>
+      <a href="https://instagram.com" target="_blank"><i class="pi pi-instagram"></i><span>Instagram</span></a>
+      <a href="https://youtube.com" target="_blank"><i class="pi pi-youtube"></i><span>YouTube</span></a>
+    </div>
+  </footer>
+</div>

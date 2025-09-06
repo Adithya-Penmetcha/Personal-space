@@ -1,0 +1,80 @@
+.profile-main-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 400px;
+}
+
+.profile-left {
+  flex: 9;
+  /* Add left section styling/content as needed */
+}
+
+.profile-right {
+  flex: 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.upload-card {
+  width: 100%;
+  max-width: 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: #fff;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-icon {
+  font-size: 1.5rem;
+  color: #d32f2f;
+  margin-bottom: 0.5rem;
+}
+
+.upload-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.upload-row {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.file-input.small-input {
+  font-size: 0.85rem;
+  padding: 0.2rem 0.4rem;
+  height: 2rem;
+  width: 120px;
+}
+
+.upload-btn.small-btn {
+  font-size: 0.85rem !important;
+  padding: 0.2rem 0.7rem !important;
+  border-radius: 4px;
+  height: 2rem;
+  min-width: 70px;
+}
+
+.error-msg {
+  color: #e53935;
+  text-align: center;
+}
+
+.file-name {
+  color: #333;
+  margin-top: 0.3rem;
+}

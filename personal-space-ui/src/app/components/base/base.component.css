@@ -1,0 +1,102 @@
+/* Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-color: #e63946;
+  padding: 0.5rem;
+}
+
+/* TabMenu */
+::ng-deep .custom-tabmenu .p-tabmenu-nav {
+  background: transparent;
+  border: none;
+  justify-content: center;
+}
+
+::ng-deep .custom-tabmenu .p-tabmenu-nav .p-tabmenuitem {
+  margin: 0 0.5rem;
+}
+
+/* All links underline placeholder */
+::ng-deep .custom-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
+  color: white !important;
+  font-weight: 500;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  background: transparent !important;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+/* Active tab */
+::ng-deep .custom-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
+  color: #ffd6d6 !important;
+  border-bottom: 2px solid white !important;
+}
+
+/* Responsive tab layout */
+@media (max-width: 600px) {
+  ::ng-deep .custom-tabmenu .p-tabmenu-nav {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+  ::ng-deep .custom-tabmenu .p-tabmenu-nav .p-tabmenuitem {
+    margin: 0 0.25rem;
+  }
+
+  ::ng-deep .custom-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+/* Footer */
+.footer {
+  background-color: #495057;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Social icons row */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* spacing between items */
+  flex-wrap: wrap; /* allow wrapping if screen is too small */
+}
+
+/* Social item */
+.social-icons a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: white;
+  font-size: 0.85rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
+
+/* Icon style */
+.social-icons i {
+  font-size: 1rem;
+}
+

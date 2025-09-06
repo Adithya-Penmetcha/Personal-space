@@ -1,0 +1,30 @@
+<div class="profile-main-container">
+  <div class="profile-left">
+    <!-- Left section content (can be filled as needed) -->
+  </div>
+  <div class="profile-right">
+    <p-card class="upload-card">
+      <div class="upload-section">
+        <div class="upload-icon">
+          <i class="pi pi-upload"></i>
+        </div>
+        <label for="resumeInput" class="upload-label">Upload Resume (PDF, &lt;2MB)</label>
+        <div class="upload-row">
+          <input
+            id="resumeInput"
+            type="file"
+            accept=".pdf"
+            (change)="onFileSelected($event)"
+            class="file-input small-input"
+          />
+        </div>
+        @if (errorMsg) {
+          <div class="error-msg small-text">{{ errorMsg }}</div>
+        }
+        @if (selectedFile && !errorMsg) {
+          <div class="file-name small-text">Selected: {{ selectedFile.name }}</div>
+        }
+      </div>
+    </p-card>
+  </div>
+</div>
